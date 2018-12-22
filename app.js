@@ -4,6 +4,7 @@ var express = require('express');
 var helmet = require('helmet');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var compression = require('compression');
 
 var indexRouter = require('./src/api');
 
@@ -14,6 +15,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(compression);
 
 app.use('/', indexRouter);
 
