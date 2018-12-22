@@ -1,11 +1,13 @@
-const express = require('express');
-const helmet = require('helmet');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+'use strict';
 
-const indexRouter = require('./src/api');
+var express = require('express');
+var helmet = require('helmet');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-const app = express();
+var indexRouter = require('./src/api');
+
+var app = express();
 
 app.use(helmet());
 app.use(logger('dev'));
