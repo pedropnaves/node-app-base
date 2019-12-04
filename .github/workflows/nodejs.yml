@@ -29,3 +29,5 @@ jobs:
         SLACK_WEBHOOK: https://hooks.slack.com/services/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
         SLACK_CHANNEL: '#github-actions-channel'
         SLACK_COLOR: '#3278BD'
+        SLACK_MESSAGE: 'Post Content :rocket:'
+        SLACK_TITLE: 'Post Title'
