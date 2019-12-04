@@ -1,2 +1,16 @@
-- name: Run ESLint
-  uses: stefanoeb/eslint-action@1.0.0
+name: Eslint CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x]
+
+    steps:
+    - name: Run ESLint
+    - uses: stefanoeb/eslint-action@1.0.0
