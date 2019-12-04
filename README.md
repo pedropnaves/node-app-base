@@ -1,5 +1,4 @@
 # node-app-base
-
     ✅ Node.js
     ✅ Express
     ✅ Babel
