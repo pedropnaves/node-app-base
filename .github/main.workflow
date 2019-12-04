@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "Node CI" {
   on = "push"
   resolves = ["ESLint"]
 }
