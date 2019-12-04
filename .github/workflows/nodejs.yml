@@ -29,4 +29,5 @@ jobs:
         status: ${{ job.status }}
         text: 'test integration'
       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_SLACK }}
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
