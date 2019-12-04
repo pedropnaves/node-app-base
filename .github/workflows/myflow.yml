@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - name: Run ESLint
-    - uses: stefanoeb/eslint-action@1.0.0
+      uses: stefanoeb/eslint-action@1.0.0
